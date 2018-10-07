@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    block config
+    head
+        title=title
+        meta(content=description name="description")
+        meta(name="robots", content="noindex")
+        link(rel="canonical", href="http://robertoblake.com/")
+        //- this checks to see the the "embed" property is set to "true"
+        //- in the package.json file
+        if config.entry.css.embed
+            link(rel="stylesheet" href=`${embedPath}` inline)
+    body
+        block content
+            h1 Welcome to pug-starter! #{config.lang} :)
+            p This is a barebone setup.
+            p You are currently on master branch.
+            p If you want to see a full example of what pug starter offers out of the box use:
+            p 
+            b git checkout example
+//- The style.css is at the bottom so it doesn't
+//- block the loading of assets
+if config.entry.css.external
+  link(rel="stylesheet", href=`${baseUrl}/style.css`)
