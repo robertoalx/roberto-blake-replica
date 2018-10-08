@@ -4,6 +4,7 @@ html(lang="en")
     head
         title=title
         meta(content=description name="description")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no") 
         meta(name="robots", content="noindex")
         link(rel="canonical", href="http://robertoblake.com/")
         //- this checks to see the the "embed" property is set to "true"
@@ -11,13 +12,9 @@ html(lang="en")
         if config.entry.css.embed
             link(rel="stylesheet" href=`${embedPath}` inline)
     body
+        include ../header/header
         block content
-            h1 Welcome to pug-starter! #{config.lang} :)
-            p This is a barebone setup.
-            p You are currently on master branch.
-            p If you want to see a full example of what pug starter offers out of the box use:
-            p 
-            b git checkout example
+        include ../footer/footer
 //- The style.css is at the bottom so it doesn't
 //- block the loading of assets
 if config.entry.css.external
