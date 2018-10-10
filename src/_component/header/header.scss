@@ -42,6 +42,7 @@
     text-decoration: none;
     padding: 0.7rem 1.5rem;
     display: block;
+    cursor: pointer;
 }
 
 .header__menu-sub-link {
@@ -63,7 +64,8 @@
     border: 0.1rem solid $color-mercury
 }
 
-#toggle-top-menu {
+#toggle-top-menu,
+#header-sub-menu {
     display: none;
 }
 
@@ -71,3 +73,17 @@
     // display: inherit;
     top: -100%;
 }
+
+.header__sub-menu {
+    display: none;
+}
+
+#header-sub-menu:checked + .header__menu-link + .header__sub-menu {
+    display: inherit;
+}
+
+.rbcf-circle-down {
+    padding: 1rem;
+}
+
+
