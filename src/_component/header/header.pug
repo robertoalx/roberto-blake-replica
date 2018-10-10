@@ -1,9 +1,15 @@
 nav.header
+    //- pre=JSON.stringify(data['top-menu'], null, 4)
+    input(type="checkbox", id="toggle-top-menu")
+    ul.header__menu-list
+        each item in data['top-menu']
+            li.header__menu-item
+                a.header__menu-link(href=item.href, target=item.target)=item.text
+                if item.type && item.type == 'dropdown'
+                    ul
+                        each dropdown in item.children
+                            li
+                                a.header__menu-sub-link(href=dropdown.href)=dropdown.text
     .header__top
         span.header__fullname Roberto Blake
         label.rbcf-menu(for="toggle-top-menu")
-    //- pre=JSON.stringify(data['top-menu'], null, 4)
-    input(type="checkbox", id="toggle-top-menu")
-    .header__menu-list
-        each item in data['top-menu']
-            a.header__menu-link(href=item.href, target=item.target)=item.text
