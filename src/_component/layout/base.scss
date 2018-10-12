@@ -17,5 +17,18 @@ body {
 }
 
 .content {
-margin-top: 5rem;
+// margin-top: 3rem;
+}
+
+.header__wrapper {
+    background-color: $color-pizazz;
+
+    h1 {
+        color: $color-white;
+        font-size: 3.6rem;
+        font-weight: normal;
+        padding: 1rem 1.5rem;
+        text-align: center;
+
+    }
 }
