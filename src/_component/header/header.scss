@@ -62,7 +62,7 @@
     // display: none;
     transition: 0.25s;
     position: absolute;
-    top: 5rem;
+    top: -100%;
     left: 0;
     right: 0;
     border: 0.1rem solid $color-mercury
@@ -75,7 +75,7 @@
 
 #toggle-top-menu:checked + .header__menu-list {
     // display: inherit;
-    top: -100%;
+    top: 5rem;
 }
 
 .header__sub-menu {
@@ -92,6 +92,35 @@
 
 .rbcf-circle-down {
     padding: 1rem;
+}
+
+.header__footer {
+    background-color: $color-mine-shaft;
+    color: $color-white;
+    padding: 2.5rem;
+    text-align: center;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: normal;
+        // margin-bottom: 0.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.header__download {
+    border: 0.1rem solid $color-fuel-yellow;
+    background-color: $color-sandy-brown;
+    color: $color-white;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+
 }
 
 
