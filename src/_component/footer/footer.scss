@@ -19,8 +19,28 @@
     }
 }
 
-.list__wrapper {
-    background-color: $color-pizazz
+.footer__social {
+    background-color: $color-pizazz;
+    color: $color-white;
+
+    h2 {
+        font-size: 3rem;
+        padding-top: 3rem;
+    }
+
+    p {
+        margin-top: 1.5rem;
+    }
+
+    a {
+        color: $color-astral;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: $color-bay-of-many;
+        }
+    }
 }
 
 .list__icon {
@@ -44,7 +64,6 @@
 }
 
 .list__description {
-    color: $color-white;
     width: 34rem;
     margin: 0 auto;
     padding: 1rem;
