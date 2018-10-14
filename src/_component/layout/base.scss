@@ -19,23 +19,3 @@ body {
 .content {
 // padding-top: 3rem;
 }
-
-.header__wrapper {
-    background-color: $color-pizazz;
-
-    h1 {
-        color: $color-white;
-        font-size: 3.6rem;
-        font-weight: normal;
-        padding: 1rem 1.5rem;
-        text-align: center;
-
-    }
-}
-
-.header__image {
-    background-image: url('asset/image/robertoblakeheader.jpg');
-    height: 61.1rem;
-    background-position: center;
-    background-size: cover;
-}
