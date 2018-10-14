@@ -1,3 +1,3 @@
-mixin link(link, title, text)
+mixin link(link, title, _blank, text)
     strong
-        a(href=link, title=title)=text
+        a(href=link, title=title, target=_blank)=text
