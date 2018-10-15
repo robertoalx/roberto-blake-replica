@@ -8,15 +8,8 @@
 }
 
 .footer__link {
-    color: $color-astral;
-    text-decoration: none;
-    display: inline-block;
     padding: 1rem;
-
-    &:hover {
-        text-decoration: underline;
-        color: $color-bay-of-many;
-    }
+    display: inline-block;
 }
 
 .footer__social {
@@ -30,16 +23,6 @@
 
     p {
         margin-top: 1.5rem;
-    }
-
-    a {
-        color: $color-astral;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-            color: $color-bay-of-many;
-        }
     }
 }
 

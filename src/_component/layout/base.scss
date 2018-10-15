@@ -20,6 +20,16 @@ body {
 // padding-top: 3rem;
 }
 
+a {
+    text-decoration: none;
+    color: $color-astral;
+
+    &:hover {
+        text-decoration: underline;
+        color: $color-bay-of-many;
+    }
+}
+
 p {
     font-size: 1.6rem;
 }
