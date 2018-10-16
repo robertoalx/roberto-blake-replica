@@ -33,3 +33,10 @@ a {
 p {
     font-size: 1.6rem;
 }
+
+hr {
+    border-top: 0.1rem solid $color-gallery;
+    margin: 1.5rem;
+}
+
+@import 'landing-content';
