@@ -3,3 +3,32 @@
     background-position: center;
     background-size: cover;
 }
+
+%button {
+    border: 0.1rem solid $color-fuel-yellow;
+    background-color: $color-sandy-brown;
+    color: $color-white;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.button__download {
+    @extend %button;
+    padding: 1rem 1.5rem;
+}
+
+.button__training {
+    @extend %button;
+    padding: 0rem 1rem;
+
+    &:hover{
+        background-color: $color-carrot-orange;
+        border-radius: 0.1rem solid $color-meteor;
+        text-decoration: none;
+    }
+}
+
