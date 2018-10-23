@@ -26,6 +26,7 @@
     padding: 0.5rem 1rem;
     margin: 1rem 0;
     display: inline-block;
+    font-size: 1.2rem;
     
     &:hover{
         background-color: $color-carrot-orange;
@@ -39,8 +40,8 @@
     border-radius: 0.1rem solid $color-valencia;
     @extend %button;
     padding: 0.5rem 1rem;
-    margin: 1rem 0;
     display: inline-block;
+    font-size: 1.2rem;
 
     &:hover {
         background-color: $color-persian-red;
