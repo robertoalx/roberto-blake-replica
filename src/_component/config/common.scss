@@ -23,11 +23,28 @@
 
 .button__training {
     @extend %button;
-    padding: 0rem 1rem;
-
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    display: inline-block;
+    
     &:hover{
         background-color: $color-carrot-orange;
         border-radius: 0.1rem solid $color-meteor;
+        text-decoration: none;
+    }
+}
+
+.button__youtube {
+    background-color: $color-roman;
+    border-radius: 0.1rem solid $color-valencia;
+    @extend %button;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    display: inline-block;
+
+    &:hover {
+        background-color: $color-persian-red;
+        border-radius: 0.1rem solid $color-mexican-red;
         text-decoration: none;
     }
 }
