@@ -4,7 +4,18 @@
         grid-template-columns: 1fr 2fr;
 
         .text-justify {
-            padding: 2rem;
+            padding: 0 2rem;
         }
     }
+
+    .two-column {
+        display: flex;
+    }
+
+    .column {
+        width: 50%;
+        padding: 1rem;
+        text-align: justify;
+    }
 }
+
