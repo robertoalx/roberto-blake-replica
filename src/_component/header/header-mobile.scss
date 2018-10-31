@@ -11,6 +11,13 @@
     border: 0.1rem solid $color-mercury;
     position: relative;
     background-color: $color-mine-shaft;
+    z-index: 1;
+}
+
+.header__top {
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 .header__fullname {
@@ -60,13 +67,13 @@
 }
 
 .header__menu-list {
-    // display: none;
     transition: 0.25s;
-    position: absolute;
+    position: fixed;
     top: -100%;
     left: 0;
     right: 0;
-    border: 0.1rem solid $color-mercury
+    border: 0.1rem solid $color-mercury;
+    z-index: 1;
 }
 
 #toggle-top-menu,
