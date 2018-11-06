@@ -148,3 +148,8 @@
     @extend %header__image
 }
 
+.header__image--contact {
+    background-image: url('asset/image/robertoblake2016-header-contact.jpg');
+    @extend %header__image
+}
+
