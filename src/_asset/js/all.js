@@ -1,14 +1,25 @@
 let iframeList = Array.from(document.querySelectorAll('iframe'));
-
+// load any youtube that hasn't been loaded on initial page scroll
 let handlerFunction = () => {
   //- set the src attribute value to be the value of data-src
-  iframeList.map(iframe => {
-    iframe.src = iframe.dataset.src;
+  iframeList
+    .filter(iframe => !iframe.src)
+    .map(iframe => {
+      iframe.src = iframe.dataset.src;
   });
   document.removeEventListener('scroll', handlerFunction);
 };
 let scrollListener = document.addEventListener('scroll', handlerFunction);
 
+// load any youtube that is in view on page load
+(() => {
+  iframeList.filter.map(iframe => {
+    if (iframe.getBoundingClientRect().top < window.innerHeight) {
+      iframe.src = iframe.dataset.src;
+    }
+  })
+});
+//  hide Roberto Blake's email
 let bookSpeakerList = Array.from(document.querySelectorAll('.book-me'));
 
 bookSpeakerList.map(bookSpeaker => bookSpeaker.addEventListener('click', e => {
