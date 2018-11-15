@@ -4,17 +4,17 @@
     "target": ""
   },
   {
-    "href": "/about.php",
+    "href": "/roberto-blake-replica/about.php",
     "text": "My Story",
     "target": ""
   },
   {
-    "href": "/speaker.php",
+    "href": "/roberto-blake-replica/speaker.php",
     "text": "Speaking",
     "target": ""
   },
   {
-    "href": "/training.php",
+    "href": "/roberto-blake-replica/training.php",
     "text": "Consulting",
     "target": ""
   },
@@ -52,12 +52,12 @@
     ]
   },
   {
-    "href": "/press.php",
+    "href": "/roberto-blake-replica/press.php",
     "text": "Press",
     "target": ""
   },
   {
-    "href": "/contact.php",
+    "href": "/roberto-blake-replica/contact.php",
     "text": "Contact",
     "target": ""
   }
